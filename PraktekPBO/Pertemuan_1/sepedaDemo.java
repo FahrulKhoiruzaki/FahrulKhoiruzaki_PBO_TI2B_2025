@@ -2,6 +2,7 @@ public class sepedaDemo {
     public static void main(String[] args) {
         sepeda spd1 = new sepeda();
         sepeda spd2 = new sepeda();
+        sepedaGunung spd3 = new sepedaGunung();
 
         spd1.setMerk("Polygon");
         spd1.tambahKecepatan(10);
@@ -14,5 +15,11 @@ public class sepedaDemo {
         spd2.tambahKecepatan(10);
         spd2.gantiGear(3);
         spd2.cetakStatus();
+
+        spd3.setMerk("Klinee");
+        spd3.tambahKecepatan(5);
+        spd3.gantiGear(7);
+        spd3.setTipeSuspensi("Gas suspension");
+        spd3.cetakStatus();
     }
 }
